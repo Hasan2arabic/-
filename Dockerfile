@@ -1,5 +1,5 @@
 # Use a base image that supports systemd, for example, Ubuntu
-FROM alpine:3.18
+FROM ubuntu:23.10
 
 # Install necessary packages
 RUN apt-get update && \
