@@ -1,5 +1,5 @@
 # Use a base image that supports systemd, for example, Ubuntu
-FROM ubuntu:23.10
+FROM debian:11
 
 # Install necessary packages
 RUN apt-get update && \
