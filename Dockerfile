@@ -1,5 +1,5 @@
 # Use a base image that supports systemd, for example, Ubuntu
-FROM alpine:3.18
+FROM ubuntu:23.10
 
 # Install necessary packages
 RUN apt-get update && \
@@ -9,8 +9,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN echo 'root:root' | chpasswd
 # Expose the web-based terminal port
-EXPOSE 4200
-
+# EXPOSE 4200
+EXPOSE 8192
 # Start shellinabox
 CMD ["/usr/bin/shellinaboxd", "-t", "-s", "/:LOGIN"]
 
