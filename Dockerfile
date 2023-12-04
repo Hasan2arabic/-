@@ -1,5 +1,5 @@
 # Use a base image that supports systemd, for example, Ubuntu
-FROM alpine:3.18.5
+FROM debian:12
 
 # Install necessary packages
 RUN apt-get update && \
